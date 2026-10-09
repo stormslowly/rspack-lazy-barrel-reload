@@ -1,0 +1,16 @@
+{
+  "name": "rspack-lazy-barrel-reload",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "rspack serve",
+    "repro": "node repro.mjs",
+    "control": "node repro.mjs --control"
+  },
+  "devDependencies": {
+    "@rspack/cli": "2.2.8",
+    "@rspack/core": "2.2.8",
+    "@rspack/dev-server": "2.2.1",
+    "playwright": "1.63.0"
+  }
+}

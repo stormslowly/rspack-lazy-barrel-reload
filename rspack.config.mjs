@@ -13,11 +13,7 @@ export default {
   module: {
     rules: control ? [{ test: /[\\/]src[\\/]lib[\\/]/, sideEffects: true }] : [],
   },
-  lazyCompilation: {
-    entries: false,
-    imports: true,
-    test: /feature\.js$/,
-  },
+  lazyCompilation: true,
   devServer: {
     port: Number(process.env.PORT || 8765),
     hot: true,
